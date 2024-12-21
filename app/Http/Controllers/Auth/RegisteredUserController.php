@@ -43,7 +43,7 @@ class RegisteredUserController extends Controller
         ]);
 
          // Assign default role to user
-    $user->assignRole('admin');
+    $user->assignRole('user');
 
     Auth::login($user);
 
